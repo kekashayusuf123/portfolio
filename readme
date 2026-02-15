@@ -1,0 +1,113 @@
+Sale_Data_Analysis
+Sales Data Analysis Project - Comprehensive EDA, visualization, and insights using Python, Excel, and Power BI. Perfect for portfolio showcasing data analytics skills.
+
+📊 Overview
+Yeh project ek fictional retail company ke sales data ka analysis karta hai (12 months CSV files). Key insights:
+
+Top performing products/regions
+
+Monthly trends & revenue patterns
+
+Customer segmentation
+
+Data cleaning (missing values via MODE/MEDIAN)
+
+Tools Used: Python (Pandas, Matplotlib), Excel (Mean/Median/Mode), Power BI Dashboard (6-8 charts)
+
+📈 Key Findings
+Best month: December (holiday sales peak)
+
+Top product: iPhone (highest revenue)
+
+Best city: San Francisco
+
+30% orders multiple products ke saath
+
+🛠️ Tech Stack
+text
+Python: Pandas, NumPy, Seaborn, Matplotlib
+Excel: AVERAGE, MEDIAN, MODE formulas
+Power BI: Line/Bar charts, Maps, KPI cards
+SQL: Joins for multi-file analysis (optional)
+📁 Dataset
+Source: Kaggle Superstore Sales (12 CSV files ~100k rows)
+
+Columns: Order ID, Product, Quantity, Price Each, Order Date, Address
+
+Size: 1 year (2019), ~260MB
+
+Download: Kaggle Sales Data
+
+🚀 Quick Start
+bash
+# Clone repo
+git clone https://github.com/yourusername/sale_data_analysis.git
+cd sale_data_analysis
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run analysis
+jupyter notebook sales_analysis.ipynb
+📋 Analysis Steps
+Data Loading & Cleaning
+
+Concat 12 CSVs
+
+Handle missing (MODE for categories)
+
+Parse dates, create Revenue column (Price * Quantity)
+
+EDA
+
+text
+Best Month: df.groupby('Month')['Revenue'].sum()
+Top Products: df['Product'].value_counts()
+Visualizations
+
+Line chart: Monthly revenue
+
+Bar: Top 10 products
+
+Heatmap: City vs Product
+
+Power BI Dashboard
+
+6 charts: Trends, Geo-map, KPI gauges
+
+📊 Sample Code Snippets
+python
+# Mean revenue per product
+df.groupby('Product')['Revenue'].mean()
+
+# MODE for missing category
+mode_val = df['Category'].mode()[0]
+df['Category'].fillna(mode_val, inplace=True)
+📈 Dashboard Preview
+[Insert Power BI screenshot or link here]
+
+💼 Skills Demonstrated
+Data cleaning (Mean/Median/Mode imputation)
+
+EDA & Statistics
+
+Visualization (Python + Power BI)
+
+Portfolio-ready project for Data Analyst interviews
+
+🤝 Contributing
+Fork the repo
+
+Create branch git checkout -b feature/xyz
+
+Commit git commit -m 'Add feature'
+
+Push & PR
+
+📄 License
+MIT License - Feel free to use in portfolio!
+
+👨‍💻 Author
+Shubham J | Data Analytics Enthusiast | LinkedIn | Portfolio
+
+Built for SSC CGL prep & corporate interviews 🚀
